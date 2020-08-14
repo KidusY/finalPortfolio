@@ -1,38 +1,301 @@
-.App {
-  text-align: center;
+:root {
+	--main-font-style: 'Raleway', sans-serif;
+	--main-bg-color: #f6f6f6;
+	--main-color: #ef512c;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #f6f6f6;
+	font-family: var(--main-font-style);
+}
+.primaryBgColor {
+	color: white;
+	background-color: #ef512c;
+}
+.primaryColor {
+	color: #ef512c;
+}
+.text-center {
+	text-align: center;
+}
+.hero {
+	display: flex;
+
+	width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heroText {
+	margin: 50px 100px;
+	width: 30%;
+	padding: 40px;
+	font-size: 70px;
+	font-weight: bold;
+	color: var(--main-color);
+}
+.heroImg {
+	width: 70%;
+	height: 80vh;
+
+	background: url("./assets/hiclipart.com\ \(3\).png");
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: center;
+}
+.Projects h2 {
+	text-align: center;
+	font-size: 50px;
+	color: #292929;
+}
+.Projects hr {
+	text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ProjectsContainer {
+	margin: 20px auto;
+	box-shadow: 2px 2px 2px 2px rgba(17, 17, 17, 0.513);
+	width: 90%;
+	border-radius: 10px;
+	border-radius: none;
+}
+.project {
+	display: flex;
+	flex-wrap: wrap !important;
+	width: 100%;
+	padding: 30px;
+	transition: ease-in-out 1s;
+	cursor: pointer;
+
+	border-radius: none;
+}
+.description {
+	width: 50%;
+	color: white;
+}
+.description i {
+	margin-left: 70px;
+	color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.project p,
+h3 {
+	color: white;
+	margin: 10px 50px;
+	width: 40%;
+	font-weight: 700;
+}
+.project p {
+	font-weight: 500;
+}
+.project1 {
+	background: #433470;
+	border-radius: 5px;
+}
+.project1 .projectImg {
+	width: 700px;
+	height: 400px;
+	background: url("./assets/project1.PNG");
+	background-size: cover;
+	border-radius: 10px;
+	border-radius: none;
+}
+.project2 {
+	background: rgb(42, 42, 42);
+}
+.project2 .projectImg {
+	width: 700px;
+	height: 400px;
+	background: url("./assets/project2.PNG");
+	background-size: cover;
+	border-radius: 10px;
+	border-radius: none;
+}
+.project6 {
+	background: rgb(148, 57, 45);
+}
+.project6 .projectImg {
+	width: 700px;
+	height: 400px;
+	background: url("./assets/project6.JPG");
+	background-size: cover;
+	border-radius: 10px;
+	border-radius: none;
+}
+.project7 {
+	background: #146c96;
+}
+.project7 .projectImg {
+	width: 700px;
+	height: 400px;
+	background: url("./assets/project7.JPG");
+	background-size: cover;
+	border-radius: 10px;
+	border-radius: none;
+}
+.Services {
+	margin-top: 100px;
+}
+.Services h2 {
+	text-align: center;
+	font-size: 50px;
+	color: #292929;
+}
+.servicesContainer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 70%;
+	margin: 10px auto;
+	justify-content: center;
+}
+.servicesContainer .service1,
+.service2,
+.service3 {
+	background-color: white;
+	width: 30%;
+	height: 60vh;
+	margin: 20px;
+	overflow: hidden;
+}
+.service img {
+	width: 120%;
+}
+.service h3 {
+	width: 80%;
+	font-size: 40px;
+	color: var(--main-color);
+	text-align: center;
+	margin-top: 50px;
+}
+.service h5 {
+	color: rgb(46, 46, 46);
+	font-size: 25px;
+	font-weight: 500;
+}
+.service3 img {
+	width: 72%;
+	float: right;
+}
+.aboutMe {
+	display: flex;
+	flex-wrap: wrap;
+}
+.aboutMeImg {
+	width: 50%;
+	height: 70vh;
+	
+	background: url("./assets/IMG_0216_Edited\)_\(2\).jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.aboutMeDescription{
+	color: white;
+	width: 50%;
+	padding: 100px;
+	font-family: 600;
+	background-color: var(--main-color);
+}
+.aboutMeDescription p{
+margin-top: 15px;
+}
+.aboutMeDescription h2 {
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	
+}
+.contact{
+	height: 80vh;
+	padding: 100px;
+}
+.contact a{
+color:var(--main-color);
+text-decoration: none;
+}
+.contact h2 {	
+	text-align: center;
+	font-size: 50px;
+	color: #292929;	
+}
+.contact p {
+	text-align: center;
+	width:30%;
+	margin: 40px auto;
+}
+.contact form{
+	display: block;
+	margin: 10px auto;	
+	width: 35%;
+}
+.contact input,textarea{
+	display: block;
+	margin: 0 auto;		
+	width: 100%;
+	height: 35px;
+	border:1px solid rgba(17, 17, 17, 0.267);
+	margin: 15px;
+	outline: none;
+}
+fieldset{
+	display: inline-block;
+	width: 47%;
+	border: none;
+	
+	
+}
+textarea{
+	height: 150px;
+}
+label{
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.contact button{
+	display: block;
+	margin: 0 auto;
+	padding: 10px 45px;
+	background-color: var(--main-color);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer{
+	margin-top: 80px;
+	width: 100%;
+	height: 40vh;
+	background-color: #3f383a;
+}
+footer h2{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+footer h5{
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+}
+footer img{
+	display: block;
+	margin: 0 auto;
+	transform: translateY(-40px);
+}
+.links {
+	display: flex;
+	justify-content: center;
+	margin: 50px auto;
+	width: 40%;
+}
+.links img{
+	width: 50px
 }
