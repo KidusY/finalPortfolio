@@ -8,7 +8,7 @@ const Nav = () => (
     <h1>Kidus Kinfe </h1>
     </div>
 
-    <nav>
+    <nav className="deskTopNav">
     <ul>
         <li>My Work</li>
         <li>My Services</li>
@@ -18,6 +18,15 @@ const Nav = () => (
 
     
     </nav>
+
+    <nav className="moblieNav">
+    <ul>
+        <li>My Work <br/> <i className="material-icons">computer</i></li>
+        <li>My Services <br/><i className="material-icons">settings</i></li>
+        <li>About Me <br/><i className="material-icons">info_outline</i></li>
+        
+    </ul>
+     </nav>
 	
 
 	</div>
