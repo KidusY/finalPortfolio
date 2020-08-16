@@ -12,7 +12,7 @@ body {
 	background-color: #f6f6f6;
 	font-family: var(--main-font-style);
 }
-.App{
+.App {
 	width: 100%;
 }
 .primaryBgColor {
@@ -180,7 +180,8 @@ h3 {
 }
 .service3 img {
 	width: 72%;
-	float: right;
+	display: block;
+	margin: 0 auto;
 }
 .aboutMe {
 	display: flex;
@@ -319,24 +320,31 @@ footer img {
 	.hero .heroImg {
 		display: none;
 	}
-	.project .description{
+	.project .description {
 		width: 100%;
 	}
-	.project .description p{
+	.project .description p {
 		width: 100%;
 		margin: 10px auto;
 	}
-	.description h3{
+	.description h3 {
 		width: 100%;
 		margin: 10px auto;
 		text-indent: 0px !important;
 	}
-	.description i{
-		margin-left:20px 
+	.description i {
+		margin-left: 20px;
 	}
-	.projectImg{
+	.projectImg {
 		background-repeat: no-repeat;
-	
-	background-position: center !important;
+		background-position: center !important;
 	}
+	.servicesContainer{
+		width: 100%;
+	}
+	.service{
+		width: 100% !important;
+		margin: 10px !important;
+	}
+
 }
