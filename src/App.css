@@ -99,7 +99,7 @@ h3 {
 	border-radius: 5px;
 }
 .project1 .projectImg {
-	width: 700px;
+	width: 50%;
 	height: 400px;
 	background: url("./assets/project1.PNG");
 	background-size: cover;
@@ -110,7 +110,7 @@ h3 {
 	background: rgb(42, 42, 42);
 }
 .project2 .projectImg {
-	width: 700px;
+	width: 50%;
 	height: 400px;
 	background: url("./assets/project2.PNG");
 	background-size: cover;
@@ -121,7 +121,7 @@ h3 {
 	background: rgb(148, 57, 45);
 }
 .project6 .projectImg {
-	width: 700px;
+	width: 50%;
 	height: 400px;
 	background: url("./assets/project6.JPG");
 	background-size: cover;
@@ -132,7 +132,7 @@ h3 {
 	background: #146c96;
 }
 .project7 .projectImg {
-	width: 700px;
+	width: 50%;
 	height: 400px;
 	background: url("./assets/project7.JPG");
 	background-size: cover;
@@ -150,8 +150,8 @@ h3 {
 .servicesContainer {
 	display: flex;
 	flex-wrap: wrap;
-	width: 70%;
-	margin: 10px auto;
+	width: 97%;
+	margin: 30px auto;
 	justify-content: center;
 }
 .servicesContainer .service1,
@@ -159,8 +159,10 @@ h3 {
 .service3 {
 	background-color: white;
 	width: 30%;
-	height: 60vh;
-	margin: 20px;
+	min-width: 400px;
+	padding: 20px;
+	height: auto;
+	margin: 10px;
 	overflow: hidden;
 }
 .service img {
@@ -171,7 +173,7 @@ h3 {
 	font-size: 40px;
 	color: var(--main-color);
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 .service h5 {
 	color: rgb(46, 46, 46);
@@ -179,7 +181,7 @@ h3 {
 	font-weight: 500;
 }
 .service3 img {
-	width: 72%;
+	width: 63%;
 	display: block;
 	margin: 0 auto;
 }
@@ -189,7 +191,8 @@ h3 {
 }
 .aboutMeImg {
 	width: 50%;
-	height: 70vh;
+	min-height: 70vh;
+	height: auto;
 
 	background: url("./assets/IMG_0216_Edited\)_\(2\).jpg");
 	background-position: center;
@@ -212,7 +215,7 @@ h3 {
 	font-size: 50px;
 }
 .contact {
-	height: 80vh;
+	height: auto;
 	padding: 100px;
 }
 .contact a {
@@ -243,6 +246,7 @@ textarea {
 	border: 1px solid rgba(17, 17, 17, 0.267);
 	margin: 15px;
 	outline: none;
+	border-radius: 5px;
 }
 .container {
 	display: flex;
@@ -280,7 +284,8 @@ label {
 footer {
 	margin-top: 100px;
 	width: 100%;
-	height: 40vh;
+	min-height: 40vh;
+	height: auto;
 	background-color: #3f383a;
 }
 footer h2 {
@@ -315,10 +320,20 @@ footer img {
 		width: 90%;
 		padding: 10px;
 		margin: 0 auto;
-		font-size: 65px;
+		font-size: 60px;
 	}
 	.hero .heroImg {
 		display: none;
+	}
+	.ProjectsContainer{
+		width: 95%;
+	}
+	.Projects h2{
+		font-size: 35px;
+		margin-top:25px;
+	}
+	.project{
+		padding: 5px;
 	}
 	.project .description {
 		width: 100%;
@@ -336,6 +351,7 @@ footer img {
 		margin-left: 20px;
 	}
 	.projectImg {
+		width: 100%;
 		background-repeat: no-repeat;
 		background-position: center !important;
 	}
@@ -344,7 +360,61 @@ footer img {
 	}
 	.service{
 		width: 100% !important;
+		padding:15px;
+		height: auto !important;
 		margin: 10px !important;
 	}
+	.Services h2{
+		font-size:35px !important;
+	}
+	.service h3{
+		margin: 0 auto;
+		font-size:26px;
+	}
+	.aboutMeDescription{
+		width: 100%;
+		padding:10px 5px;
+		
+	}
+	.aboutMeDescription h2{
+		width: 100%;
+		font-size: 35px;
+		margin-top: 20px;
+		
+	}
+	
+	.aboutMeImg{
+		width: 100%;
+		margin: 0 auto;
+	}
 
+	.contact{
+		width: 100%;
+		padding:0;
+		min-height: 100vh;
+		height: auto;
+	}
+	.contact h2{
+		font-size:35px;
+		margin-top: 15px;
+	}
+	.contact p{
+width:100%;
+	}
+	.contact_form_class{
+		
+		width: 90% !important;
+	}
+	.contact_form_class input{
+		margin: 5px auto;
+		width: 90% !important;
+	}
+	.contact_form_class textarea{
+		margin: 5px auto;
+		width: 90% !important;
+	}
+
+	footer{
+		height: auto;
+	}
 }

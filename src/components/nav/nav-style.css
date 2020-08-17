@@ -81,19 +81,20 @@ text-shadow: 2px 2px 2px #4e4e4e6e;
         left: 0;
         bottom: 0;
         width: 100%;
+        z-index: 1000;
     }
     .moblieNav ul{
         display: flex;
         position: fixed;
         left: 0;
         bottom: 0;
-        width: 100%;
+        width: 100%;;
         margin: 0 auto;
         list-style: none;
         height: 80px;
-        background-color: var(--main-color);
+        background-color:rgb(238, 238, 238);
        text-align: center;
-        color: white;
+        
         
     }
     .moblieNav ul li{
