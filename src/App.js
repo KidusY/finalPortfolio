@@ -17,7 +17,6 @@ import psql from './assets/psql.png';
 import emailjs from 'emailjs-com';
 import $ from 'jquery';
 import './App.css';
-
 class App extends React.Component {
 	constructor() {
 		super();
@@ -34,7 +33,6 @@ class App extends React.Component {
 		);
 		console.log('clicked');
 	};
-
 	handleSubmit = (e) => {
 		e.preventDefault();
 		emailjs.sendForm('gmail', 'contactform', e.target, 'user_03mPtrgxknWJs8ftJTLxF').then(
@@ -47,7 +45,6 @@ class App extends React.Component {
 		);
 		e.target.reset();
 	};
-
 	render() {
 		return (
 			<div className="App">
@@ -56,7 +53,6 @@ class App extends React.Component {
 					<div className="heroText">I Design and Develop web apps and websites.</div>
 					<div className="heroImg" />
 				</div>
-
 				<div className="Projects" id="projects">
 					<h2> My Work </h2>
 					<br />
@@ -88,7 +84,6 @@ class App extends React.Component {
 									<img src={psql} alt="psqlIcon" />
 								</div>
 							</div>
-
 							<div className="projectImg" />
 						</div>
 						<div className="project2 project">
@@ -116,10 +111,8 @@ class App extends React.Component {
 									<img src={bootstrap} alt="bootstrapIcon" />
 								</div>
 							</div>
-
 							<div className="projectImg" />
 						</div>
-
 						<div className="project6 project">
 							<div className="description">
 								<h3 style={{ textIndent: '10px', fontSize: '40px' }}>Cuisine Galore</h3>
@@ -139,7 +132,6 @@ class App extends React.Component {
 									main purpose of this app is to utilize a restaurant api and create a user friendly
 									experience by only using minimal building tools.
 								</p>
-
 								<div className="iconContainer">
 									<img src={html} alt="htmlIcon" />
 									<img src={css} alt="cssIcon" />
@@ -147,7 +139,6 @@ class App extends React.Component {
 									<img src={jquery} alt="jqueryIcon" />
 								</div>
 							</div>
-
 							<div className="projectImg" />
 						</div>
 						<div className="project7 project">
@@ -174,19 +165,16 @@ class App extends React.Component {
 									<img src={jquery} alt="jqueryIcon" />
 								</div>
 							</div>
-
 							<div className="projectImg" />
 						</div>
 					</div>
 				</div>
-
 				<div className="Services" id="services">
 					<h2>My Services </h2>
 					<br />
 					<center>
 						<hr width="200" color="#EF512C" />
 					</center>
-
 					<div className="servicesContainer">
 						<div className="service1 service">
 							<img src={webDesign} alt="webdesign" />
@@ -205,7 +193,6 @@ class App extends React.Component {
 						</div>
 					</div>
 				</div>
-
 				<div className="aboutMe" id="aboutMe">
 					<div className="aboutMeDescription">
 						<h2>Get To Know Me </h2>
@@ -237,25 +224,21 @@ class App extends React.Component {
 					</div>
 					<div className="aboutMeImg" />
 				</div>
-
 				<div className="contact" id="contact">
 					<h2>Talk 2 Me </h2>
 					<br />
 					<center>
 						<hr width="200" color="#EF512C" />
 					</center>
-
 					<p>
 						{' '}
 						It doesn't matter if its a small project or you want to hire me full time, do be shy shoot me an
 						email at <a href="mailto:kidusyilma@gmail.com">kidusyilma@gmail.com </a>
 						or better yet, fill out the contact form{' '}
 					</p>
-
 					<form onSubmit={this.handleSubmit} className="contact_form_class">
 						<label htmlFor="name">Name</label>
 						<input id="name" name="name" />
-
 						<div className="container">
 							<div className="email">
 								<label htmlFor="email">Email</label>
@@ -266,17 +249,13 @@ class App extends React.Component {
 								<input id="phone" name="phone" />
 							</div>
 						</div>
-
 						<label htmlFor="message">Message</label>
 						<textarea style={{ resize: 'none' }} id="message" name="message" />
-
 						<button type="submit">Send</button>
 					</form>
 				</div>
-
 				<footer>
 					<img src={logo} alt="logo" />
-
 					<h2> Kidus Kinfe </h2>
 					<h5>San Diego,CA </h5>
 					<h5>(619) 745 0312</h5>
@@ -289,5 +268,4 @@ class App extends React.Component {
 		);
 	}
 }
-
 export default App;
