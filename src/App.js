@@ -232,9 +232,9 @@ class App extends React.Component {
 					</center>
 					<p>
 						{' '}
-						It doesn't matter if its a small project or you want to hire me full time, do be shy shoot me an
+						It doesn't matter if its a small project or you want to hire me full time, don't be shy shoot me an
 						email at <a href="mailto:kidusyilma@gmail.com">kidusyilma@gmail.com </a>
-						or better yet, fill out the contact form{' '}
+						or better yet, fill out the contact form down below.
 					</p>
 					<form onSubmit={this.handleSubmit} className="contact_form_class">
 						<label htmlFor="name">Name</label>
