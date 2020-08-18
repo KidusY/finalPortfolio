@@ -33,17 +33,26 @@ const Nav = () => (
 
 		<nav className="moblieNav">
 			<ul>
-				<li>
-					My Work <br /> <i className="material-icons">computer</i>
-				</li>
-				<li>
-					My Services <br />
-					<i className="material-icons">settings</i>
-				</li>
-				<li>
-					About Me <br />
-					<i className="material-icons">info_outline</i>
-				</li>
+				<Link activeClass="active" to="projects" spy={true} smooth={true} offset={-70} duration={500}>
+					<li>
+						
+						My Work <br /> <i className="material-icons">computer</i>{' '}
+					</li>
+				</Link>
+
+				<Link activeClass="active" to="services" spy={true} smooth={true} offset={-70} duration={500}>
+					<li>
+					My Services <br/><i className="material-icons">settings</i>
+					</li>
+				</Link>
+
+				<Link activeClass="active" to="aboutMe" spy={true} smooth={true} offset={-70} duration={500}>
+					<li>
+					
+						About Me <br />
+						<i className="material-icons">info_outline</i>{' '}
+					</li>
+				</Link>
 			</ul>
 		</nav>
 	</div>

@@ -97,10 +97,12 @@ text-shadow: 2px 2px 2px #4e4e4e6e;
         
         
     }
+    .moblieNav ul a{
+        width: calc(100%/3);
+    }
     .moblieNav ul li{
         border: 1px solid white;
-        padding: 15px;
-        width: calc(100%/3);
+        padding: 15px;      
         
     }
 }
