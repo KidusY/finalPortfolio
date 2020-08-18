@@ -86,10 +86,12 @@ body {
 	display: flex;	
 	margin: 50px auto;
 	height: auto;
+	
 	width: 100%;
 }
 .iconContainer img{
 	width: 50px;
+	max-height: 50px;
 	margin: 0 auto;
 	height: auto;
 }
@@ -328,6 +330,7 @@ footer img {
 }
 .links img {
 	width: 50px;
+	max-height: 50px ;
 }
 
 @media (max-width: 768px) {
@@ -368,6 +371,7 @@ footer img {
 	}
 	.iconContainer img{
 		width: 30px;
+		max-height: 30px;
 		margin: 0 auto;
 		height: auto;
 	}
