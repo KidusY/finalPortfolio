@@ -71,8 +71,6 @@ body {
 	width: 100%;
 	padding: 30px;
 	transition: ease-in-out 1s;
-	cursor: pointer;
-
 	border-radius: none;
 }
 .description {
@@ -82,6 +80,23 @@ body {
 .description i {
 	margin-left: 70px;
 	color: white;
+	
+}
+.iconContainer{
+	display: flex;	
+	margin: 50px auto;
+	height: auto;
+	width: 100%;
+}
+.iconContainer img{
+	width: 50px;
+	margin: 0 auto;
+	height: auto;
+}
+.description a {
+	cursor: pointer;
+	color: white!important;
+	text-decoration: none;
 }
 
 .project p,
@@ -159,7 +174,7 @@ h3 {
 .service3 {
 	background-color: white;
 	width: 30%;
-	min-width: 400px;
+	min-width: 320px;
 	padding: 20px;
 	height: auto;
 	margin: 10px;
@@ -181,7 +196,7 @@ h3 {
 	font-weight: 500;
 }
 .service3 img {
-	width: 63%;
+	width: 63% !important;
 	display: block;
 	margin: 0 auto;
 }
@@ -307,7 +322,8 @@ footer img {
 .links {
 	display: flex;
 	justify-content: center;
-	margin: 50px auto;
+	margin: 0 auto;
+	margin-top: 50px;
 	width: 40%;
 }
 .links img {
@@ -325,14 +341,14 @@ footer img {
 	.hero .heroImg {
 		display: none;
 	}
-	.ProjectsContainer{
+	.ProjectsContainer {
 		width: 95%;
 	}
-	.Projects h2{
+	.Projects h2 {
 		font-size: 35px;
-		margin-top:25px;
+		margin-top: 25px;
 	}
-	.project{
+	.project {
 		padding: 5px;
 	}
 	.project .description {
@@ -350,71 +366,78 @@ footer img {
 	.description i {
 		margin-left: 20px;
 	}
+	.iconContainer img{
+		width: 30px;
+		margin: 0 auto;
+		height: auto;
+	}
+	
 	.projectImg {
-		width: 100%;
+		width: 100% !important;
 		background-repeat: no-repeat;
 		background-position: center !important;
 	}
-	.servicesContainer{
+	.servicesContainer {
 		width: 100%;
 	}
-	.service{
+	.service {
 		width: 100% !important;
-		padding:15px;
+		padding: 15px;
 		height: auto !important;
 		margin: 10px !important;
 	}
-	.Services h2{
-		font-size:35px !important;
+	.service img{
+		width: 90%;
 	}
-	.service h3{
+	.Services h2 {
+		font-size: 35px !important;
+	}
+	.service h3 {
 		margin: 0 auto;
-		font-size:26px;
+		font-size: 26px;
 	}
-	.aboutMeDescription{
+	.aboutMeDescription {
 		width: 100%;
-		padding:10px 5px;
-		
+		padding: 10px 5px;
 	}
-	.aboutMeDescription h2{
+	.aboutMeDescription h2 {
 		width: 100%;
 		font-size: 35px;
 		margin-top: 20px;
-		
 	}
-	
-	.aboutMeImg{
+
+	.aboutMeImg {
 		width: 100%;
 		margin: 0 auto;
 	}
 
-	.contact{
+	.contact {
 		width: 100%;
-		padding:0;
+		padding: 0;
 		min-height: 100vh;
 		height: auto;
 	}
-	.contact h2{
-		font-size:35px;
+	.contact h2 {
+		font-size: 35px;
 		margin-top: 15px;
 	}
-	.contact p{
-width:100%;
+	.contact p {
+		width: 100%;
 	}
-	.contact_form_class{
-		
+	.contact_form_class {
 		width: 90% !important;
 	}
-	.contact_form_class input{
+	.contact_form_class input {
 		margin: 5px auto;
 		width: 90% !important;
 	}
-	.contact_form_class textarea{
+	.contact_form_class textarea {
 		margin: 5px auto;
 		width: 90% !important;
 	}
 
-	footer{
+	footer {
+		min-height: 70vh;
 		height: auto;
 	}
 }
