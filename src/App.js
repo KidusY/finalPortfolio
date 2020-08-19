@@ -50,7 +50,7 @@ class App extends React.Component {
 			<div className="App">
 				<Nav />
 				<div className="hero" id="home">
-					<div className="heroText">I Design and Develop web apps and websites.</div>
+					<div className="heroText">I Design/Develop web apps and websites.</div>
 					<div className="heroImg" />
 				</div>
 				<div className="Projects" id="projects">
