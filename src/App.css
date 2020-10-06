@@ -298,6 +298,26 @@ label {
 	cursor: pointer;
 }
 
+.emailConfirmation{
+	background-color: #ef512c;
+
+	position: relative;
+	top: -300px;
+	max-width: 360px;
+	margin: 0 auto;
+	padding: 50px;
+}
+.emailConfirmation h3{
+		margin: 0 auto;
+		width: 100%;
+}
+.emailConfirmation button{
+	margin-top: 10px;
+	background: white;
+	color: black;
+	padding: 7px 15px;
+}
+
 footer {
 	margin-top: 100px;
 	width: 100%;
@@ -331,6 +351,7 @@ footer img {
 .links img {
 	width: 50px;
 	max-height: 50px ;
+	margin: 20px 50px;
 }
 
 @media (max-width: 768px) {

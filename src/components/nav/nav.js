@@ -42,7 +42,7 @@ const Nav = () => (
 
 				<Link activeClass="active" to="services" spy={true} smooth={true} offset={-70} duration={500}>
 					<li>
-					My Services <br/><i className="material-icons">settings</i>
+				Services <br/><i className="material-icons">settings</i>
 					</li>
 				</Link>
 

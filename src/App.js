@@ -20,7 +20,9 @@ import './App.css';
 class App extends React.Component {
 	constructor() {
 		super();
-		this.state = {};
+		this.state = {
+			emailSent: false
+		};
 	}
 	scrollAnimation = (e) => {
 		let hash = this.hash;
@@ -37,7 +39,7 @@ class App extends React.Component {
 		e.preventDefault();
 		emailjs.sendForm('gmail', 'contactform', e.target, 'user_03mPtrgxknWJs8ftJTLxF').then(
 			(result) => {
-				console.log(result.text);
+				if (result.text === 'OK') this.setState({ emailSent: true });
 			},
 			(error) => {
 				console.log(error.text);
@@ -232,8 +234,8 @@ class App extends React.Component {
 					</center>
 					<p>
 						{' '}
-						It doesn't matter if its a small project or you want to hire me full time, don't be shy shoot me an
-						email at <a href="mailto:kidusyilma@gmail.com">kidusyilma@gmail.com </a>
+						It doesn't matter if its a small project or you want to hire me full time, don't be shy shoot me
+						an email at <a href="mailto:kidusyilma@gmail.com">kidusyilma@gmail.com </a>
 						or better yet, fill out the contact form down below.
 					</p>
 					<form onSubmit={this.handleSubmit} className="contact_form_class">
@@ -253,6 +255,14 @@ class App extends React.Component {
 						<textarea style={{ resize: 'none' }} id="message" name="message" />
 						<button type="submit">Send</button>
 					</form>
+					{this.state.emailSent ? (
+						<div className="emailConfirmation">
+							<h3> Thanks for reaching out I will contact you in a moment </h3>
+							<button onClick={() => this.setState({ emailSent: false })}> Done</button>
+						</div>
+					) : (
+						<div />
+					)}
 				</div>
 				<footer>
 					<img src={logo} alt="logo" />
@@ -260,8 +270,12 @@ class App extends React.Component {
 					<h5>San Diego,CA </h5>
 					<h5>(619) 745 0312</h5>
 					<div className="links">
-						<img src={linkedin} alt="linkedin" />
-						<img src={gitHub} alt="linkedin" />
+						<a href="linkedin.com/in/kidus-kinfe-5b7a37199" target="_blank" rel="noopener noreferrer">
+							<img src={linkedin} alt="linkedin" />
+						</a>
+						<a href="https://github.com/KidusY" target="_blank" rel="noopener noreferrer">
+							<img src={gitHub} alt="linkedin" />
+						</a>
 					</div>
 				</footer>
 			</div>

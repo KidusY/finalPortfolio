@@ -105,6 +105,10 @@ text-shadow: 2px 2px 2px #4e4e4e6e;
         padding: 15px;      
         
     }
+    .moblieNav ul li i{
+      color: var(--main-color);   
+        
+    }
 }
 @media(min-width:768px){
     .moblieNav{
