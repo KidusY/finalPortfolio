@@ -1,7 +1,7 @@
 :root {
 	--main-font-style: 'Raleway', sans-serif;
 	--main-bg-color: #f6f6f6;
-	--main-color: #ef512c;
+	--main-color: #EF512C;
 }
 * {
 	padding: 0;
@@ -79,8 +79,21 @@ body {
 }
 .description i {
 	margin-left: 70px;
+	
 	color: white;
 	
+}
+.description .projectLinkContainer {
+	display: flex;
+	
+	
+}
+.projectLinkContainer a{
+	display: flex;
+}
+.projectLinkContainer span{
+	line-height: 1.6;
+	margin-left: 2.5px ;
 }
 .iconContainer{
 	display: flex;	
@@ -105,7 +118,7 @@ body {
 h3 {
 	color: white;
 	margin: 10px 50px;
-	width: 40%;
+	width: 95%;
 	font-weight: 700;
 }
 .project p {
@@ -220,7 +233,6 @@ h3 {
 	width: 30%;
 	min-height: 70vh;
 	height: auto;
-
 	background: url("./assets/IMG_1257.JPG");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -231,12 +243,13 @@ h3 {
 	color: white;
 	width: 70%;
 	padding: 100px;
+	font-size: large;
 	font-family: 600;
-	box-shadow: 5px 5px 5px rgba(98, 98, 98, 0.692);
+	box-shadow: 10px 15px 5px rgba(98, 98, 98, 0.692);
 	background-color: var(--main-color);
 }
 .aboutMeDescription p {
-	margin-top: 15px;
+	margin-top: 10px;
 }
 .aboutMeDescription h2 {
 	color: white;
@@ -246,6 +259,23 @@ h3 {
 .contact {
 	height: auto;
 	padding: 100px;
+}
+.contactContainer{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+svg{
+	display: block;
+	width: 50%;
+	height: 200px;
+	margin: 0 auto;
+}
+.contactDescription{
+	width: 50%;
+}
+form{
+	width: 50%;
 }
 .contact a {
 	color: var(--main-color);
@@ -258,7 +288,7 @@ h3 {
 }
 .contact p {
 	text-align: center;
-	width: 30%;
+	width: 100%;
 	margin: 40px auto;
 }
 .contact form {
@@ -408,7 +438,12 @@ footer img {
 		margin: 0 auto;
 		height: auto;
 	}
-	
+	svg{
+	display: none;
+	}
+	.contactDescription{
+		width: 100%;
+	}
 	.projectImg {
 		width: 100% !important;
 		background-repeat: no-repeat;
@@ -423,6 +458,16 @@ footer img {
 		background-repeat: no-repeat;
 		border-radius: 10px;
 		border-radius: none;
+	}
+	.project1 .projectImg {
+	
+		background-size: 100%;
+		
+	}
+	.project2 .projectImg {
+	
+		background-size: 100%;
+		
 	}
 	.project6 .projectImg {
 		width: 50%;
@@ -455,7 +500,7 @@ footer img {
 	}
 	.aboutMeDescription {
 		width: 100%;
-		padding: 10px 5px;
+		padding: 20px 10px;
 	}
 	.aboutMeDescription h2 {
 		width: 100%;
@@ -465,7 +510,8 @@ footer img {
 
 	.aboutMeImg {
 		width: 100%;
-		margin: 0 auto;
+		margin: 10px auto;
+		background-size: contain;
 	}
 
 	.contact {
